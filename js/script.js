@@ -24,6 +24,7 @@ for (const btn of callBtns){
                     coins -= 20
                     coinCount.innerText = coins
                     alert(`Calling ${service.innerText} ${number.innerText}... `);
+
                 }
                 else{
                     alert("Insufficient coins for calling...")
@@ -32,3 +33,22 @@ for (const btn of callBtns){
         }  
 })
 }  
+
+//funtionality for copy btn clicked
+const copyBtns = document.getElementsByClassName("copy-btn");
+const copyCount = document.getElementById("copy-count");
+let counts = 0
+for(const button of copyBtns){
+    button.addEventListener('click',function(){
+        counts ++
+        copyCount.innerText = counts
+
+        const card = this.parentElement.parentElement;
+        const serviceNumbers = card.getElementsByClassName("service-number")
+        for(const number of serviceNumbers){
+          navigator.clipboard.writeText(number.innerText)
+
+        }
+
+    })
+}
