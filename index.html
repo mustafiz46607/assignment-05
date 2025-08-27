@@ -30,7 +30,7 @@
                 <img src="./assets/heart.png" alt="" class="h-[30px] ">
             </div>
             <div class="flex  px-3 py-1 rounded-full bg-[#f2f2f2]">
-                <span id="coin-count" class=" font-bold mr-3" >100 </span>
+                <span id="coin-count" class=" font-bold mr-3">100 </span>
                 <img src="./assets/coin.png" alt="" class="h-[30px] ml-0">
             </div>
             <button class="btn bg-[#00a63e] text-white rounded-3xl"><span id="copy-count">0</span> Copy</button>
@@ -44,10 +44,10 @@
             Project by Government of the People’s Republic of Bangladesh</p>
     </div>
     <!-- hero section -->
-    <div class="grid md:grid-cols-4  bg-[#f5fff6] ">
+    <div class="grid lg:grid-cols-4 md:grid-cols-3 bg-[#f5fff6] ">
         <!-- card section -->
-        <div class="md:col-span-3 ">
-            <div class="card-container grid md:grid-cols-3  gap-8 md:p-14 p-10">
+        <div class="lg:col-span-3 md:col-span-3">
+            <div class="card-container grid lg:grid-cols-3 md:grid-cols-2  gap-8 md:p-14 p-10">
                 <div class="card p-4 bg-white rounded-2xl shadow-md">
                     <div class="flex justify-between items-center mb-5">
                         <div class="bg-[#ffe3e2] p-3 rounded-lg">
@@ -261,12 +261,16 @@
             </div>
         </div>
         <!-- call history section -->
-        <div class=" my-14 md:mr-10 mx-10 shawow-md bg-white rounded-2xl ">
-            <div class="  p-3 ">
+        <div class="mt-14 lg:mr-8 lg:col-span-1 lg:mx-10 md:col-span-2 md:ml-56  mx-10 bg-white rounded-2xl shawow-md ">
+
+            <div class="p-3">
                 <div class="flex justify-between items-center ">
                     <h2 class=" font-semibold pl-2"><i class="fa-regular fa-clock mr-2"></i>Call History</h2>
-                    <button class="btn bg-[#00a63e] text-white rounded-3xl"> Clear</button>
+                    <button id="clear-btn" class="btn bg-[#00a63e] text-white rounded-3xl"> Clear</button>
                 </div>
+            </div>
+
+            <div id="history-container" class=" mt-8  lg:col-span-1 md:col-span-2 shawow-md bg-white rounded-2xl">
             </div>
         </div>
     </div>
